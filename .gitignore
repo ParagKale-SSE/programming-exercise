@@ -1,0 +1,9 @@
+*.dll
+*.exe
+/Exercise1_BackwardsCounter/bin
+/Exercise1_BackwardsCounter/obj
+/Exercise2_MultiThreading/bin
+/Exercise2_MultiThreading/obj
+/Exercise3_RestApi/bin
+/Exercise3_RestApi/obj
+
