@@ -9,6 +9,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Exercise1_BackwardsCounter"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Exercise2_MultiThreading", "Exercise2_MultiThreading\Exercise2_MultiThreading.csproj", "{0036170C-4282-4368-BADB-EBF90AA2E8CE}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Algorithms", "Algorithms\Algorithms.csproj", "{55513910-B9E7-44C3-B982-9AA55584DD67}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{0036170C-4282-4368-BADB-EBF90AA2E8CE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0036170C-4282-4368-BADB-EBF90AA2E8CE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0036170C-4282-4368-BADB-EBF90AA2E8CE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{55513910-B9E7-44C3-B982-9AA55584DD67}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{55513910-B9E7-44C3-B982-9AA55584DD67}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{55513910-B9E7-44C3-B982-9AA55584DD67}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{55513910-B9E7-44C3-B982-9AA55584DD67}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
