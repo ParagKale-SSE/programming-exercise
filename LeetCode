@@ -52,3 +52,38 @@ foreach(var word in words)
     }
 }
 return output.ToArray();
+
+--------------------------------------------------------------------------------------
+
+LeetCode 20 - Valid Parentheses
+
+Dictionary<char,char> keyValuePairs = new Dictionary<char,char>();
+Stack<char> stack = new Stack<char>();
+bool isValid = true;
+keyValuePairs.Add(')', '(');
+keyValuePairs.Add('}', '{');
+keyValuePairs.Add(']', '[');
+
+foreach (char c in s)
+{
+    if (keyValuePairs.Values.Contains(c))
+    {
+        stack.Push(c);
+    }
+    else
+    {
+        if ((stack.Count > 0 && stack.Peek() == keyValuePairs[c]))
+        {
+            stack.Pop();
+        }
+        else
+        {
+            isValid = false;
+        }
+    }
+}
+if (stack.Count > 0)
+{
+    isValid = false;
+}
+return isValid;
