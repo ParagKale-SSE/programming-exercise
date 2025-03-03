@@ -87,3 +87,31 @@ if (stack.Count > 0)
     isValid = false;
 }
 return isValid;
+
+---------------------------------------------------------------------------------------
+
+leetcode - 28 - StrStr
+
+public int StrStr(string haystack, string needle) {
+        StringBuilder sb = new StringBuilder();
+int result = -1;
+if (needle == "")
+{
+    return 0;
+}
+int l = needle.Length;
+int upperBound = haystack.Length - needle.Length+1;
+for(int i = 0; i < upperBound; i++)
+{
+    sb.Clear();
+    for(int j = 0; j < l; j++)
+    {
+        sb.Append(haystack[i + j]);
+    }
+    if (sb.ToString() == needle)
+    {
+        result = i; break;
+    }
+}
+return result;
+    }
