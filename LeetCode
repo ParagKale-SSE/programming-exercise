@@ -115,3 +115,11 @@ for(int i = 0; i < upperBound; i++)
 }
 return result;
     }
+
+------------------------------------------------------
+
+leet code 58 - length of last word
+public int LengthOfLastWord(string s) {
+        var wordArray = s.Trim().Split(' ');
+return wordArray[wordArray.Length - 1].Length;
+    }
