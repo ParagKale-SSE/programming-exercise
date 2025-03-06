@@ -123,3 +123,34 @@ public int LengthOfLastWord(string s) {
         var wordArray = s.Trim().Split(' ');
 return wordArray[wordArray.Length - 1].Length;
     }
+
+------------------------------------------------------
+
+leet code 167 - Two Sum II - Input Array Is Sorted
+int[] TwoSum(int[] numbers, int target)
+{
+    int l = 0;
+    int r = numbers.Length - 1;
+    int curSum = 0;
+    int[] result = new int[2];
+
+    while(l < r)
+    {
+        curSum = numbers[l] + numbers[r];
+        if (curSum > target)
+        {
+            r--;
+        }
+        else if (curSum < target)
+        {
+            l++;
+        }
+        else
+        {
+            result[0] = l + 1;
+            result[1] = r + 1;
+            break;
+        }
+    }
+    return result;
+}
